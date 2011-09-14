@@ -26,12 +26,18 @@ setup(name='Collage Teaser View',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'Products.CMFPlone',
           'Products.Collage',
       ],
+      extra_requires={
+          'test': ['plone.app.testing',]
+      },
       entry_points="""
       # -*- Entry points: -*-
 
       [z3c.autoinclude.plugin]
       target = plone
       """,
+#      setup_requires=["PasteScript"],
+#      paster_plugins=["ZopeSkel"],
       )
