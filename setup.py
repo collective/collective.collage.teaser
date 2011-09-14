@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='Collage Teaser View',
+setup(name='collective.collage.teaser',
       version=version,
       description="Teaser View to an article with \"more\"",
       long_description=open("README.txt").read() + "\n" +
