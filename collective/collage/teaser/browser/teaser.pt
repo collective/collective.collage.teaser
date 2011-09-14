@@ -1,0 +1,46 @@
+<tal:manager replace="structure provider:collage.ContentManager" />
+<div class="collage_teaser_view">
+
+    <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+    <div class="newsImageContainer"
+         tal:condition="context/getImage|nothing">
+        <a href="#"
+           tal:define="here_url context/@@plone_context_state/object_url;"
+           tal:attributes="href view/context/absolute_url"
+           id="parent-fieldname-image">
+           <img tal:replace="structure python: context.tag(scale='mini', css_class='newsImage')" src="" alt="" />
+        </a>
+        <p class="discreet" tal:condition="context/imageCaption|nothing">
+          <metal:field use-macro="python:context.widget('imageCaption', mode='view')">
+          Image Caption
+          </metal:field>
+        </p>
+    </div>
+
+    <h2 class="tileHeadline">
+        <a class="summary url" 
+           href="to article"
+           tal:attributes="href view/context/absolute_url"
+           tal:content="view/context/Title">test de</a>
+    </h2>
+
+    <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+    <p class="tileBody"
+       tal:content="view/context/Description">
+    </p>
+
+    <div tal:replace="structure provider:plone.abovecontentbody" />
+    
+    <p class="tileFooter">
+        <a href=""
+           tal:attributes="href view/context/absolute_url"
+           i18n:translate="read_more"
+           i18n:domain="plone">
+        Read More&hellip;
+        </a>
+    </p>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+</div>

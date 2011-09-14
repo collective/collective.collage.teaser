@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.collage.teaser">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="teaser"
+    for="Products.ATContentTypes.content.base.ATCTContent"
+    permission="zope.Public"
+    template="teaser.pt"
+    class=".teaser.TeaserView"
+    layer="Products.Collage.interfaces.ICollageBrowserLayer"
+   />
+</configure>
