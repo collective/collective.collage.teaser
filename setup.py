@@ -29,7 +29,7 @@ setup(name='collective.collage.teaser',
           'Products.CMFPlone',
           'Products.Collage',
       ],
-      extra_requires={
+      extras_require={
           'test': ['plone.app.testing',]
       },
       entry_points="""
