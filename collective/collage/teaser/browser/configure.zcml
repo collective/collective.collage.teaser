@@ -11,7 +11,7 @@
     name="teaser"
     for="Products.ATContentTypes.content.base.ATCTContent"
     permission="zope.Public"
-    template="teaser.pt"
+    template="news_item_portlet.pt"
     class=".teaser.TeaserView"
     layer="Products.Collage.interfaces.ICollageBrowserLayer"
    />
