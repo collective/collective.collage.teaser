@@ -17,7 +17,6 @@
            </span>
         </a>
         <span metal:define-slot="inside" tal:replace="here/Title">title</span>
-      </span>
       <span class="portletTopRight"></span>
     </dt>
 
