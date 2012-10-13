@@ -19,7 +19,7 @@
     </div>
 
     <h2 class="tileHeadline">
-        <a class="summary url" 
+        <a class="summary url"
            href="to article"
            tal:attributes="href view/context/absolute_url"
            tal:content="view/context/Title">test de</a>
@@ -32,7 +32,7 @@
     </p>
 
     <div tal:replace="structure provider:plone.abovecontentbody" />
-    
+
     <p class="tileFooter">
         <a href=""
            tal:attributes="href view/context/absolute_url"
