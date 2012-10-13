@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.0.dev0'
 
 setup(name='collective.collage.teaser',
       version=version,
@@ -17,7 +17,7 @@ setup(name='collective.collage.teaser',
       keywords='Plone Zope Teaser Collage',
       author='Pavel Bogdanovic',
       author_email='pb@prontonet.eu',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/collective/collective.collage.teaser',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective', 'collective.collage'],
